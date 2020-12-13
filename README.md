@@ -6,7 +6,7 @@
 
 #Working with Variables
 
-API_key=2e7068e978510bd51b436e08c35953d3
+API_key=testkey
 city=Austin
 
 curl -s "api.openweathermap.org/data/2.5/weather?q={$city}&appid={$API_key}&units=imperial"
