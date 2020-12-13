@@ -16,3 +16,6 @@ echo "Temperature:"; curl -s "api.openweathermap.org/data/2.5/weather?q={$city}&
 echo "Feels Like:"; curl -s "api.openweathermap.org/data/2.5/weather?q={$city}&appid={$API_key}&units=imperial" | jq .main.feels_like
 echo "Description:" ; curl -s "api.openweathermap.org/data/2.5/weather?q={$city}&appid={$API_key}&units=imperial" | jq .weather[].description
 echo "Wind Speed:"; curl -s "api.openweathermap.org/data/2.5/weather?q={$city}&appid={$API_key}&units=imperial" | jq .wind.speed
+
+
+#I'll need to dedicate time to the git tutorials in order to remember how to commit this script from bash.
