@@ -1,10 +1,11 @@
 # Weather-API-Experiment
 
-#I'm currently working with echo, curl, and basic variable substitution to create a weather readout for Austin, Tx 
+I'm currently working with `echo`, `curl`, and basic variable substitution to create a weather readout for Austin, Tx.
 
+```
 #!/bin/bash
 
-#Working with Variables
+# Working with Variables
 
 API_key=testkey
 city=Austin
@@ -16,6 +17,7 @@ echo "Temperature:"; curl -s "api.openweathermap.org/data/2.5/weather?q={$city}&
 echo "Feels Like:"; curl -s "api.openweathermap.org/data/2.5/weather?q={$city}&appid={$API_key}&units=imperial" | jq .main.feels_like
 echo "Description:" ; curl -s "api.openweathermap.org/data/2.5/weather?q={$city}&appid={$API_key}&units=imperial" | jq .weather[].description
 echo "Wind Speed:"; curl -s "api.openweathermap.org/data/2.5/weather?q={$city}&appid={$API_key}&units=imperial" | jq .wind.speed
+```
 
 
-#I'll need to dedicate time to the git tutorials in order to remember how to commit this script from bash.
+I'll need to dedicate time to the git tutorials in order to remember how to commit this script from bash.
